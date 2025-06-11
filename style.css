@@ -1,0 +1,198 @@
+/* Fond GIF */
+html {
+    overflow: hidden;
+}
+.bg-video
+ {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  /* Contenu au-dessus de l’image */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+  
+  .logo {
+    margin-bottom: 10px;
+  }
+  
+  .logo-img {
+    width: 20%;       /* Taille de l'image */
+    height: 20%;
+    border-radius: 50%; /* Cercle parfait */
+    object-fit: cover;  /* Pour bien remplir sans déformer */
+    border: 1px solid gold;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  }
+  .subtitle {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #ddd;
+  }
+  
+  .links {
+    margin: auto;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .links a {
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 8px;
+    text-align: center;
+    border-radius: 8px;
+    transition: 0.2s ease;
+  }
+
+/* Bouton spécial avec image à gauche ET texte centré */
+.cocktail-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centre le texte dans tout le bouton */
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.2s ease;
+   height: 40px;
+  }
+  
+  .cocktail-btn span {
+    font-weight: bold;
+  }
+  
+  .cocktail-img {
+    position: absolute;
+    left: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    object-fit: cover;
+    z-index: 0;
+  }
+  .links a:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  .social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .social-icons img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+  }
+  
+  .social-icons a:hover img {
+    transform: scale(1.1);
+  }
+  
+  footer {
+    margin-top: 80px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  span {
+    font-weight: bolder;
+  }
+
+  .aya {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  .aya:hover {
+text-decoration: underline;
+color: rgb(0, 0, 0);
+  }
+
+  .accordion {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    overflow: hidden;
+    width: fit-content;
+    max-width: 90%;
+    margin: 30px auto;
+    color: white;
+    
+    transition: all 0.3s ease;
+  }
+  
+  .accordion-header {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    gap: 8px;
+  }
+  
+  .accordion-header:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .chevron {
+    transition: transform 0.3s ease;
+    font-size: 14px;
+  }
+  
+  .accordion.open .chevron {
+    transform: rotate(180deg);
+  }
+  
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 18px;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    text-align: left;
+  }
+  
+  .accordion-content p {
+    margin: 12px 0;
+  }
+  
+  .accordion.open .accordion-content {
+    max-height: 200px;
+    padding: 12px 18px;
+  }
