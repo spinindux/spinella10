@@ -1,6 +1,7 @@
 /* Fond GIF */
 html {
     overflow: hidden;
+    overflow-y: scroll;
 }
 .bg-video
  {
